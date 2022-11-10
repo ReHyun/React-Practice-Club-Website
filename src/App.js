@@ -6,6 +6,7 @@ import { Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom'
 import Introduce from './pages/Introduce.js';
 import Apply from './pages/Apply.js';
 import MadeBy from './pages/MadeBy.js';
+import LoginModal from './LoginModal';
 
 function App() {
 
@@ -17,7 +18,6 @@ function App() {
   return (
     <div className="App">
       <div className="main-bg" />
-
 
       <Nav className="justify-content-center" activeKey="/home">
         <Nav.Item>
@@ -61,6 +61,8 @@ function App() {
         <Route path="/만든사람" element={<MadeBy></MadeBy>}></Route>
         <Route path="*" element={<div> 잘못된 페이지에 접속함 </div>}></Route>
       </Routes>
+
+      
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
